@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+    <!-- Background Circle -->
+    <circle cx="64" cy="64" r="60" fill="#1a1b26"/>
+    
+    <!-- Sunset Gradient -->
+    <defs>
+        <linearGradient id="sunset" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff7edb;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ff9e64;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Glow Filter -->
+        <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" type="saturate" values="2" result="saturated" />
+            <feMerge>
+                <feMergeNode in="saturated" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Code Bracket -->
+    <path d="M40 44 L25 64 L40 84" 
+          stroke="url(#sunset)" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round" 
+          filter="url(#neon-glow)"/>
+    
+    <path d="M88 44 L103 64 L88 84" 
+          stroke="url(#sunset)" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round" 
+          filter="url(#neon-glow)"/>
+    
+    <!-- Sun Element -->
+    <circle cx="64" cy="64" r="15" 
+            fill="none" 
+            stroke="url(#sunset)" 
+            stroke-width="4"
+            filter="url(#neon-glow)"/>
+    
+    <!-- Rays -->
+    <g transform="translate(64 64)">
+        <g transform="rotate(0)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(45)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(90)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(135)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(180)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(225)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(270)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+        <g transform="rotate(315)">
+            <line x1="0" y1="-25" x2="0" y2="-20" 
+                  stroke="url(#sunset)" 
+                  stroke-width="4" 
+                  stroke-linecap="round"
+                  filter="url(#neon-glow)"/>
+        </g>
+    </g>
+    
+    <!-- Horizon Line -->
+    <path d="M24 84 Q64 64 104 84" 
+          stroke="url(#sunset)" 
+          stroke-width="4" 
+          fill="none" 
+          filter="url(#neon-glow)"/>
+</svg>

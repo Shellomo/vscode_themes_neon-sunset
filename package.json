@@ -1,0 +1,63 @@
+{
+  "name": "neon-sunset",
+  "displayName": "Neon Sunset Theme",
+  "description": "A vibrant, modern theme combining neon accents with a dark base",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Themes"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Neon Sunset",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Neon-Sunset-color-theme.json"
+      }
+    ]
+  },
+  "publisher": "Shellomo",
+  "icon": "media/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shellomo/vscode_themes_neon-sunset"
+  },
+  "keywords": [
+        "theme",
+        "dark theme",
+        "neon",
+        "cyberpunk",
+        "sunset",
+        "focus",
+        "productivity",
+        "contrast",
+        "dark",
+        "modern",
+        "minimal",
+        "clean",
+        "eye-friendly",
+        "vibrant",
+        "colorful"
+    ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^16.x.x",
+    "@typescript-eslint/eslint-plugin": "^5.x.x",
+    "@typescript-eslint/parser": "^5.x.x",
+    "eslint": "^8.x.x",
+    "typescript": "^4.x.x"
+  },
+  "dependencies": {
+    "@vscode/extension-telemetry": "^0.9.8"
+  }
+}
