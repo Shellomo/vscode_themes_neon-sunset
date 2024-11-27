@@ -2,6 +2,7 @@
 
 A modern, vibrant VS Code theme that combines the serenity of sunset colors with energetic neon accents. Designed for long coding sessions and optimal readability.
 
+![Neon Sunset Theme](media/screenshot.png)
 ## ✨ Features
 
 - 🎨 Carefully crafted color palette inspired by sunset hues and neon lights
@@ -46,10 +47,6 @@ After installation:
 1. Command Palette (Ctrl+Shift+P / Cmd+Shift+P)
 2. Type "Color Theme"
 3. Choose "Neon Sunset"
-
-## 📸 Screenshots
-
-[Coming Soon]
 
 ## 🤝 Contributing
 
